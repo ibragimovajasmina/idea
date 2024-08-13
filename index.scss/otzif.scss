@@ -1,0 +1,118 @@
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    &_main{
+        gap: 10px;
+        @media screen and (max-width:900px){
+            display: none;
+        }
+    }
+    &_text{
+        display: flex;
+        align-items: center;
+    }
+}
+body{
+    background-color: black;
+    color: white;
+}
+.header_body{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: black;
+    &_input{
+        width: 400px;
+        height: 30px;
+        border-radius: 10px;
+        background-color: grey;
+        color: black;
+    }
+}
+
+.menu{
+    display: flex;
+    gap: 50px;
+    &_otzif{
+        padding: 50px 20px;
+        &_text{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        &_tayp{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        &_btn{
+            width: 100px;
+            height: 40px;
+            border-radius: 10px;
+            background-color: greenyellow;
+            color: white;
+            border: none;
+        }
+        &_button{
+            width: 100px;
+            height: 40px;
+            border-radius: 10px;
+            background-color: rgb(39, 37, 37);
+            color: white;
+            border: none;
+        }
+    }
+}
+h1{
+    background-color: black;
+    color: white;
+}
+.otzif_group{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    @media screen and (max-width:1266px){
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+.otzif_href{
+    display: flex;
+    gap: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.span{
+    padding: 20px 20px;
+}
+.secwin{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    &_body{
+        color: white;
+        padding: 20px 20px;
+        &_img{
+            width: 250px;
+        }
+    }
+    &_text{
+        padding: 20px;
+        &_tayp{
+            display: flex;
+           
+            margin-bottom: 10px;
+            &_span{
+                color: yellowgreen;
+            }
+        }
+    }
+    @media screen and (max-width:1175px){
+        display: flex;
+        flex-wrap: nowrap;
+        width: 100%;
+        overflow-x: auto;
+    }
+}

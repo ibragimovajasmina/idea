@@ -1,0 +1,98 @@
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    &_main{
+        gap: 10px;
+        @media screen and (max-width:900px){
+            display: none;
+        }
+    }
+    &_text{
+        display: flex;
+        align-items: center;
+    }
+}
+
+.header_body{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: black;
+    &_input{
+        width: 400px;
+        height: 30px;
+        border-radius: 10px;
+        background-color: grey;
+        color: black;
+    }
+}
+body{
+    background-color: black;
+    color: white;
+}
+main{
+    display: flex;
+    gap: 30px;
+}
+
+.korzina{
+    padding: 20px 60px;
+    &_blog{
+        width: 300px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        padding: 20px 20px;
+        &_btn{
+            width: 80px;
+            height: 30px;
+            border-radius: 10px;
+            background-color: white;
+            color: black;
+        }
+    }
+}
+.img{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+
+.tovar{
+    margin-top: 100px;
+    padding: 20px 60px;
+    &_blog{
+        width: 200px;
+        padding: 20px 20px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        &_btn{
+            width: 158px;
+            height: 30px;
+            border-radius: 10px;
+            background-color: rgb(47, 46, 46);
+            color: greenyellow;
+            border: none;
+        }
+    }
+}
+
+.tovar{
+    margin-top: 100px;
+    padding: 20px 60px;
+    &_blog_tayp{
+    margin-top: 300px;
+        width: 200px;
+        padding: 20px 20px;
+        border: 2px solid yellowgreen;
+        border-radius: 10px;
+        &_btn{
+            width: 158px;
+            height: 30px;
+            border-radius: 10px;
+            background-color: rgb(47, 46, 46);
+            color: greenyellow;
+            border: none;
+        }
+    }
+}
